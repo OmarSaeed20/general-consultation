@@ -1,16 +1,19 @@
-# general_consultation
+# General Consultation
 
-A new Flutter project.
+A new Multi-vendor Flutter project.
 
-## Getting Started
+## Application Contents
+ 
+• Realtime Chat (Pusher).
+• Chat (Realtime, Pagination, photo, wave records, animations).
+• tools (dio, retrofit, retrofit_generator, build_runner, freezed, freezed_annotation, json_serializable).
+• OOP, SOLID Principles, Clean Architecture, DDD.
+• Responsive UI. 
+• Maps.
+• Notification.
+• payment integration (one Tap).
+• All Consultants (Vertical, Grid View, Search by Consultant's name).
+• Filter Consultants (Country, City, Categories, Sup Categories, Years of Experience, Verify Account, Rats, Consultant's name). 
+• Advertisements page like social media (Video, -my Advertisement (create, edit, delete), -Consultant's Advertisements (Send an inquiry, consultant details, hide ads).
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+.
