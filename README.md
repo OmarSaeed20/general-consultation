@@ -19,6 +19,7 @@ A new Multi-vendor Flutter project.
 >One-Tap payment integration is implemented for seamless payment transactions within the app. The app also provides various ways to browse and filter consultants, including vertical and grid view, search by name, country, city, categories, sub-categories, years of experience, account verification status, ratings, and more.
 > [!NOTE]
 >Additionally, the app includes an advertisements page, similar to social media platforms, with features like video advertisements, creating, editing, and deleting personal advertisements. Users can also send inquiries and view consultant details through the consultant's advertisements section.
+
 > [!IMPORTANT]
 >This project encompasses a robust set of features and technologies to deliver a comprehensive and engaging experience for users.
 
