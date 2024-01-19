@@ -4,9 +4,8 @@ A new Multi-vendor Flutter project.
 ## Pages
 https://drive.google.com/drive/folders/1vX0DtK4S46bJ7N1dE1cj0Mjq2AZKjZew?usp=sharing.
 
-## Application Contents
+## 📢 Application Contents:
  
-📢 GitHub Project Description:
 
 This project is a Realtime Chat application leveraging the power of Pusher. It provides a seamless chat experience with features like realtime messaging, pagination, photo sharing, wave records, and delightful animations.
 
@@ -22,5 +21,5 @@ Additionally, the app includes an advertisements page, similar to social media p
 
 This project encompasses a robust set of features and technologies to deliver a comprehensive and engaging experience for users.
 
-🚀 Let's bring this project to life!
+
 
