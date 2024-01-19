@@ -35,5 +35,5 @@ A new Multi-vendor Flutter project.
 </picture>
 
 <picture>
-https://github.com/OmarSaeed20/general-consultation/blob/main/assets/image/construction.svg
+ <source media="(prefers-color-scheme: light)" srcset="https://github.com/OmarSaeed20/general-consultation/blob/main/assets/image/construction.svg">
 </picture>
