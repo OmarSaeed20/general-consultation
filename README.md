@@ -7,7 +7,8 @@ A new Multi-vendor Flutter project.
 ## 📢 Application Contents:
  
 
-[!IMPORTANT]This project is a Realtime Chat application leveraging the power of Pusher. It provides a seamless chat experience with features like realtime messaging, pagination, photo sharing, wave records, and delightful animations.
+>[!IMPORTANT]
+>This project is a Realtime Chat application leveraging the power of Pusher. It provides a seamless chat experience with features like realtime messaging, pagination, photo sharing, wave records, and delightful animations.
 
 >The development tools used in this project include dio, retrofit, retrofit_generator, build_runner, freezed, freezed_annotation, and json_serializable. These tools enable efficient API integration and data serialization.
 
