@@ -29,7 +29,7 @@ class TxtBtn extends StatelessWidget {
           child: TextButton(
             style: ButtonStyle(
               shape: shape,
-              backgroundColor: MaterialStatePropertyAll(color),
+              backgroundColor: WidgetStatePropertyAll(color),
             ),
             onPressed: onTap,
             onLongPress: onLongpr,

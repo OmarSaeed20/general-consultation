@@ -1,15 +1,23 @@
+import 'package:country_code_picker/country_code_picker.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
+import 'core/consts/app_strings.dart';
 import 'core/languages/ar_translations.dart';
 import 'core/languages/en_translations.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import '/core/util/theme.dart';
-import '/index.dart';
+import 'core/util/theme.dart';
+import 'core/routes/app_pages.dart';
+import 'core/util/app_prefs.dart';
+import 'core/util/keys.dart';
 
 class ConsultationApp extends StatelessWidget {
   const ConsultationApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // //debugPrint(">>>> ${UserServiceImp.to.currentUser.value?.blockNotification}");
     return AnnotatedRegion(
       value: const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
@@ -23,8 +31,6 @@ class ConsultationApp extends StatelessWidget {
         ensureScreenSize: true,
         builder: (context, child) => GetMaterialApp(
           title: Kstrings.projectName,
-          // smartManagement: SmartManagement.keepFactory,
-          // showPerformanceOverlay: true,
           debugShowCheckedModeBanner: false,
           translationsKeys: {Keys.ar: ar, Keys.en: en},
           locale: Locale(Get.find<AppPreferences>().getLang),

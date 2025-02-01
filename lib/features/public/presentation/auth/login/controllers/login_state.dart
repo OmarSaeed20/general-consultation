@@ -8,14 +8,12 @@ class LoginState extends Equatable {
     this.password = "",
     this.isPassword = true,
     this.isCorrectPhone = false,
-    // this.phoneNumber,
     this.suffixIcon = CupertinoIcons.eye,
     this.formKey,
     this.rx = RequestState.none,
   });
   final String phone, codeCountry, password;
   final bool isPassword, isCorrectPhone;
-  // // final PhoneNumber? phoneNumber;
   final IconData suffixIcon;
   final GlobalKey<FormState>? formKey;
   final RequestState rx;
@@ -26,7 +24,6 @@ class LoginState extends Equatable {
     String? password,
     bool? isPassword,
     bool? isCorrectPhone,
-    // // PhoneNumber? phoneNumber,
     IconData? suffixIcon,
     GlobalKey<FormState>? formKey,
     RequestState? rx,
@@ -37,7 +34,6 @@ class LoginState extends Equatable {
         password: password ?? this.password,
         isPassword: isPassword ?? this.isPassword,
         isCorrectPhone: isCorrectPhone ?? this.isCorrectPhone,
-        // // // phoneNumber: phoneNumber ?? this.phoneNumber,
         suffixIcon: suffixIcon ?? this.suffixIcon,
         formKey: formKey ?? this.formKey,
         rx: rx ?? this.rx,
@@ -49,7 +45,6 @@ class LoginState extends Equatable {
         password,
         isPassword,
         isCorrectPhone,
-        // phoneNumber,
         suffixIcon,
         formKey,
         rx,

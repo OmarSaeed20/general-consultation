@@ -789,7 +789,7 @@ Map<String, dynamic> removeWidgetFromMap(Map<String, dynamic> currentWidget,
       ..map<String, dynamic>((key, value) =>
           MapEntry(key, Utils.removeWidget(value, deletedWidget)));
 
-List removeWidgetFromList(List list, Map<String, dynamic> deletedWidget) => list
+List<T> removeWidgetFromList<T>(List<T> list, Map<String, dynamic> deletedWidget) => list
   ..removeWhere((value) => value == deletedWidget)
   ..map((e) => Utils.removeWidget(e, deletedWidget)).toList();
 
@@ -815,8 +815,8 @@ List updateWidgetFromList(List list, Map<String, dynamic> updatedWidget) {
   return list..map((e) => Utils.updateWidget(e, updatedWidget)).toList();
 }
 
-extension ListsExtension on List {
-  List removeWidget(Map<String, dynamic> deletedWidget) =>
+extension ListsExtension<T> on List<T> {
+  List<T> removeWidget(Map<String, dynamic> deletedWidget) =>
       removeWidgetFromList(this, deletedWidget);
 
   List updateWidget(Map<String, dynamic> updatedWidget) =>

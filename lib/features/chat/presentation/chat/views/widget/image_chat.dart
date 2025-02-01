@@ -45,6 +45,7 @@ class ChatImageBody extends StatelessWidget {
               backgroundColor: KColors.black,
               shape: RoundedRectangleBorder(borderRadius: 0.radius),
             ),
+            
             child: AnimatedSize(
               duration: const Duration(milliseconds: 350),
               curve: Curves.easeInSine,

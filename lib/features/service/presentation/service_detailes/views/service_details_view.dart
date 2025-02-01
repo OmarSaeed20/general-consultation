@@ -16,7 +16,7 @@ class ServiceDetailsView extends StatelessWidget {
                   length: controller.tabController.value.length,
                   child: NestedScrollView(
                     // controller: controller.state.value.officeScrollContr,
-                    headerSliverBuilder: (context, _) => [
+                    headerSliverBuilder: (context, _) => [ 
                       SliverList(
                         delegate: SliverChildListDelegate(
                           [

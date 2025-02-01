@@ -30,7 +30,7 @@ class TextInputWidget extends StatelessWidget {
   final String? title, hintText, val;
   final TextStyle? textStyle, hintStyle;
   final Color? prefixColor, fillColor, suffixIconColor;
-  final bool isPassword, readOnly,enabled;
+  final bool isPassword, readOnly, enabled;
   final dynamic prefixIcon;
   final IconData? suffixIcon;
   final VoidCallback? onPressed, callback;
@@ -51,7 +51,7 @@ class TextInputWidget extends StatelessWidget {
         TextFormField(
           autovalidateMode: AutovalidateMode.onUserInteraction,
           initialValue: val,
-          enabled:enabled,
+          enabled: enabled,
           controller: controller,
           inputFormatters: keyboardType == TextInputType.number
               ? [FilteringTextInputFormatter.digitsOnly]
@@ -110,7 +110,7 @@ class TextInputWidget extends StatelessWidget {
             suffixIcon: (suffixIcon != null)
                 ? TextButton(
                     style: const ButtonStyle(
-                      shape: MaterialStatePropertyAll(CircleBorder()),
+                      shape: WidgetStatePropertyAll(CircleBorder()),
                     ),
                     onPressed: onPressed,
                     child: Icon(

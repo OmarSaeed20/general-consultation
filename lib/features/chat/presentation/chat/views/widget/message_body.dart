@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:general_consultation/index.dart';
 import 'package:photo_view/photo_view.dart';
+import 'package:voice_message_package/voice_message_package.dart';
 
 part 'chat_holder_wid.dart';
 part 'chat_voice_body.dart';

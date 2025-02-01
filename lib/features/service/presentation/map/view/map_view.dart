@@ -1,8 +1,5 @@
-
 import '/index.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
-import '../controller/map_controller.dart';
 
 class MapView extends GetView<MapControllerImp> {
   const MapView({super.key});

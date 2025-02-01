@@ -11,6 +11,7 @@ Future<void> injection() async {
     () => NetworkInfoImpl(internetConnectionChecker: Get.find()),
     fenix: true,
   );
+  
   // sl.registerSingletonAsync<NotificationService>(
   //   () => NotificationService().init(),
   // );

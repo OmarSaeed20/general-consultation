@@ -1,6 +1,10 @@
-import 'index.dart';
+ 
+import 'package:flutter/material.dart';
+
 import 'app.dart';
 import 'sl.dart' as di;
+import 'dart:async';
+
 // import 'package:firebase_core/firebase_core.dart';
 
 Future<void> main() async {
@@ -13,3 +17,4 @@ Future<void> main() async {
   ]); */
   runApp(const ConsultationApp());
 }
+

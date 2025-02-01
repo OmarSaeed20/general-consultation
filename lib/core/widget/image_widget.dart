@@ -125,8 +125,8 @@ class ImageWidget extends StatelessWidget {
             onPressed: onTap,
             onLongPress: onLongPress,
             style: ButtonStyle(
-              padding: MaterialStatePropertyAll(padding ?? gPadding()),
-              shape: const MaterialStatePropertyAll(CircleBorder()),
+              padding: WidgetStatePropertyAll(padding ?? gPadding()),
+              shape: const WidgetStatePropertyAll(CircleBorder()),
             ),
             child: getImage(),
           )

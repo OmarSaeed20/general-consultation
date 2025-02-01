@@ -9,13 +9,13 @@ class IconBackWidget extends StatelessWidget {
       padding: padding ?? gPadding(top: 5),
       child: IconButton.filled(
         style: const ButtonStyle(
-          // minimumSize: MaterialStatePropertyAll(Size(20, 20)),
-          // maximumSize: MaterialStatePropertyAll(Size(30, 40)),
-          padding: MaterialStatePropertyAll(EdgeInsetsDirectional.all(0)),
-          // iconSize: MaterialStatePropertyAll(24),
-          backgroundColor: MaterialStatePropertyAll(KColors.transparent),
-          iconColor: MaterialStatePropertyAll(KColors.primaryDark),
-          shape: MaterialStatePropertyAll(
+          // minimumSize: WidgetStatePropertyAll(Size(20, 20)),
+          // maximumSize: WidgetStatePropertyAll(Size(30, 40)),
+          padding: WidgetStatePropertyAll(EdgeInsetsDirectional.all(0)),
+          // iconSize: WidgetStatePropertyAll(24),
+          backgroundColor: WidgetStatePropertyAll(KColors.transparent),
+          iconColor: WidgetStatePropertyAll(KColors.primaryDark),
+          shape: WidgetStatePropertyAll(
             CircleBorder(
                 // side: BorderSide(color: KColors.grey),
                 ),

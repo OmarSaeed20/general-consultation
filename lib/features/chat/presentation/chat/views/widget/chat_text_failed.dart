@@ -280,7 +280,7 @@ class _IsRecordingState extends StatelessWidget {
                     color: KColors.redAccount,
                     size: 20.h,
                   ),
-                  shape: const MaterialStatePropertyAll(CircleBorder()),
+                  shape: const WidgetStatePropertyAll(CircleBorder()),
                   onTap: () => ctrl.removeRecorder(),
                 ),
               ), */
@@ -302,7 +302,7 @@ class _IsRecordingState extends StatelessWidget {
               Expanded(
                 child: TxtBtn(
                   const Icon(CupertinoIcons.pause_fill),
-                  shape: const MaterialStatePropertyAll(CircleBorder()),
+                  shape: const WidgetStatePropertyAll(CircleBorder()),
                   onTap: () => ctrl.toggleRecorder(),
                 ),
               ),
@@ -502,102 +502,3 @@ class DraftedImage extends StatelessWidget {
     );
   }
 }
-
-/* class CardTextFieldContent extends GetView<ChatControllerImp> {
-  const CardTextFieldContent({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Obx(
-      () => Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // record && image
-          DraftedImage(controller: controller),
-          DraftedRecord(controller: controller),
-
-          // Text Field
-          AnimatedContainer(
-            duration: const Duration(seconds: 1),
-            curve: Curves.fastLinearToSlowEaseIn,
-            margin: gPadding(right: 10, left: 10, bottom: 15),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Expanded(
-                  child: AnimatedSwitcher(
-                    switchInCurve: Curves.fastLinearToSlowEaseIn,
-                    switchOutCurve: Curves.fastEaseInToSlowEaseOut,
-                    duration: const Duration(seconds: 1),
-                    transitionBuilder: (child, animation) => SlideTransition(
-                      position: Tween<Offset>(
-                        begin: const Offset(1.0, 0.0),
-                        end: const Offset(0.0, -0.1),
-                      ).animate(animation),
-                      child: child,
-                    ),
-                    child: AnimatedSize(
-                      duration: const Duration(seconds: 1),
-                      curve: Curves.fastLinearToSlowEaseIn,
-                      child: controller.state.value.isRecording
-                          ? _IsRecordingState(ctrl: controller)
-                          : controller.state.value.isImageDraft
-                              ? IsImageDraftAction(controller: controller)
-                              : controller.state.value.isRecordDraft
-                                  ? IsRecordDraftAction(controller: controller)
-                                  : _ChatTextField(
-                                      fillColor: KColors.fillColor2,
-                                      borderRadius: 30,
-                                      hintText: Kstrings.writeHere.tr,
-                                      // enabled: !controller.state.value.isRecording,
-                                      prefixIcon: ImageWidget(
-                                        path: Kimage.gallery,
-                                        onTap: () => controller.pickImage(),
-                                      ),
-                                      textEditingController:
-                                          controller.state.value.msgCtrl,
-                                      isTitle: false,
-                                      suffixIcon: ImageWidget(
-                                        path: Kimage.microphone,
-                                        color:
-                                            controller.state.value.isRecording
-                                                ? KColors.primary
-                                                : null,
-                                        onTap: () =>
-                                            controller.toggleRecorder(),
-                                        height: 20,
-                                      ),
-                                    ),
-                    ),
-                  ),
-                ),
-                if (!controller.state.value.isRecording)
-                  if (!controller.state.value.isImageDraft)
-                    if (!controller.state.value.isRecordDraft)
-                      AnimatedContainer(
-                        duration: const Duration(seconds: 1),
-                        curve: Curves.fastLinearToSlowEaseIn,
-                        padding: gPadding(
-                          right:
-                              !controller.state.value.rxsend.isLoading ? 0 : 25,
-                        ),
-                        child: !controller.state.value.rxsend.isLoading
-                            ? ImageWidget(
-                                onTap: () => controller.sendMessage(),
-                                path: Kimage.send,
-                                color: KColors.primary,
-                              )
-                            : const LoadingWidget(),
-                      ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
- */

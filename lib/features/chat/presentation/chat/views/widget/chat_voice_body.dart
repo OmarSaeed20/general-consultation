@@ -66,16 +66,16 @@ class _ChatVoiceBodyState extends State<ChatVoiceBody> {
             cornerRadius: 6.r,
           ),
           // if (!widget.isFile)
-          Positioned(
-            left: Get.find<AppPreferences>().getLang == Keys.ar ? 5.0.w : null,
-            right: Get.find<AppPreferences>().getLang != Keys.ar ? 5.0.w : null,
+          /* Positioned(
+            // left: Get.find<AppPreferences>().getLang == Keys.ar ? 5.0.w : null,
+            // right: Get.find<AppPreferences>().getLang != Keys.ar ? 5.0.w : null,
             bottom: 3.0.h,
             child: _ChatDateTime(
               time: widget.dateTime!,
               isMe: widget.isMe,
               isFile: widget.isFile,
             ),
-          ),
+          ), */
         ],
       ),
     );

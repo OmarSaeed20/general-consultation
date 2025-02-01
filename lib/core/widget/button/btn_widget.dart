@@ -40,7 +40,7 @@ class BtnWidget extends StatelessWidget {
         child: TextButton(
           onPressed: rx.isLoading ? null : onTap,
           style: ButtonStyle(
-            padding: MaterialStatePropertyAll(gPaddingAll(4)),
+            padding: WidgetStatePropertyAll(gPaddingAll(4)),
           ),
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 250),
