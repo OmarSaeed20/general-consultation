@@ -19,7 +19,7 @@ class ServiceDetailsView extends StatelessWidget {
                     headerSliverBuilder: (context, _) => [ 
                       SliverList(
                         delegate: SliverChildListDelegate(
-                          [
+                          [ 
                             _AdsDetailsImage(
                               path: controller.state.value.vendor?.image,
                             ),
